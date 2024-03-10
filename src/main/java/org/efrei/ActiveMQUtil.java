@@ -26,7 +26,7 @@ public class ActiveMQUtil {
     }
 
     private static Connection createConnection() {
-        BrokerService broker = null;
+        BrokerService broker;
         try {
             broker = BrokerFactory.createBroker(new URI("broker:(tcp://localhost:61616)"));
             broker.start();
